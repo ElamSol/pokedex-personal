@@ -1,0 +1,16 @@
+/* Vista completa «Ya conseguidos» con selección */
+.caught-help{margin:10px 2px 8px;font-size:13px;line-height:1.5;color:#44596a}
+.caught-actions{display:flex;flex-wrap:wrap;gap:8px}
+.caught-actions .button{min-height:44px}
+.caught-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(138px,1fr));gap:10px}
+.pick-card{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;padding:12px 8px 10px;border:2px solid #d3dfe6;border-radius:14px;background:#fff;cursor:pointer;text-align:center;transition:border-color .12s,background .12s}
+.pick-card:hover{border-color:#9db7c7}
+.pick-card.selected{border-color:#c0392b;background:#fff1ef}
+.pick-check{position:absolute;top:8px;left:8px;width:24px;height:24px;accent-color:#c0392b;cursor:pointer}
+.pick-check:focus-visible{outline:3px solid #f3b72e;outline-offset:2px}
+.pick-sprite{width:84px;height:84px;object-fit:contain}
+.pick-number{font-size:11px;font-weight:800;color:#5d7383;letter-spacing:.03em}
+.pick-name{font-size:14px;font-weight:800;color:#172c3d;line-height:1.25}
+.pick-date{font-size:11px;color:#5d7383}
+.load-more-row{display:flex;justify-content:center;margin:18px 0 6px}
+@media(max-width:560px){.caught-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.caught-actions .button{flex:1 1 100%}}

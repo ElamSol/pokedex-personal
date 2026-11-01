@@ -1,0 +1,204 @@
+
+RESULTADO DE LA PRUEBA (revisa que tenga sentido antes de la descarga completa)
+
+== Entrada 1 ==
+  [Pokemon X] 2 fila(s)
+     - gift | Gift | Lumiose City | Nv 10-10
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Bulbasaur gift
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Pokemon Y] 2 fila(s)
+     - gift | Gift | Lumiose City | Nv 10-10
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Bulbasaur gift
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Rubi Omega] 2 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Bulbasaur gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Let's get started!
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Zafiro Alfa] 2 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Bulbasaur gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Let's get started!
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Sol] 0 fila(s)
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Luna] 0 fila(s)
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Ultrasol] 1 fila(s)
+     - static | Island Scan | Route 2 | Nv 10-10 | cond: Friday
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Ultraluna] 1 fila(s)
+     - static | Island Scan | Route 2 | Nv 10-10 | cond: Friday
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+
+== Entrada 25 ==
+  [Pokemon X] 16 fila(s)
+     - wild | Friend Safari | Kiloude City | Nv 30-30
+     - wild | Route 3 (Ouvert Way) | Nv 4-5
+     - wild | Santalune Forest | Nv 3-4
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 22-22 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 36-36 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 99-99 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Pokemon Y] 16 fila(s)
+     - wild | Friend Safari | Kiloude City | Nv 30-30
+     - wild | Route 3 (Ouvert Way) | Nv 4-5
+     - wild | Santalune Forest | Nv 3-4
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 22-22 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 36-36 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 99-99 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Rubi Omega] 17 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 36-36 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 99-99 | nota: Pikachu gift
+     - wild | Safari Zone | Nv 28-30
+     - gift | Gift | Fallarbor Town | Nv 20-20 | nota: Cosplay Pikachu (cannot leave Omega Ruby / Alpha Sapphire)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pokémon Cafe Pikachu
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pokémon x Satay King's Pikachu
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: The Pikachu Cup Is a Go!
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 36-36 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Zafiro Alfa] 17 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 36-36 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 50-50 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 99-99 | nota: Pikachu gift
+     - wild | Safari Zone | Nv 28-30
+     - gift | Gift | Fallarbor Town | Nv 20-20 | nota: Cosplay Pikachu (cannot leave Omega Ruby / Alpha Sapphire)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pokémon Cafe Pikachu
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pokémon x Satay King's Pikachu
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: The Pikachu Cup Is a Go!
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 36-36 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Sol] 8 fila(s)
+     - wild | SOS call | Hau'oli City (Shopping District) | Nv 5-8
+     - wild | SOS call | Route 1 | Nv 3-5
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Luna] 8 fila(s)
+     - wild | SOS call | Hau'oli City (Shopping District) | Nv 5-8
+     - wild | SOS call | Route 1 | Nv 3-5
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Ultrasol] 6 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - wild | SOS call | Route 1 | Nv 2-4
+     - gift | Gift | Heahea City | Nv 40-40
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+  [Ultraluna] 6 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 5-5 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - wild | SOS call | Route 1 | Nv 2-4
+     - gift | Gift | Heahea City | Nv 40-40
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 10-10 | nota: Pikachu gift
+     - evoluciona desde #172 forma 0: Level up with high friendship
+
+== Entrada 26-alola ==
+  [Pokemon X] 0 fila(s)
+  [Pokemon Y] 0 fila(s)
+  [Rubi Omega] 0 fila(s)
+  [Zafiro Alfa] 0 fila(s)
+  [Sol] 0 fila(s)
+     - evoluciona desde #25 forma 0: Use a Thunder Stone
+  [Luna] 0 fila(s)
+     - evoluciona desde #25 forma 0: Use a Thunder Stone
+  [Ultrasol] 0 fila(s)
+     - evoluciona desde #25 forma 0: Use a Thunder Stone
+  [Ultraluna] 0 fila(s)
+     - evoluciona desde #25 forma 0: Use a Thunder Stone
+
+== Entrada 150 ==
+  [Pokemon X] 5 fila(s)
+     - static | Unknown Dungeon | Nv 70-70
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: First HKTW National Championships!
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: So, this is my power...
+  [Pokemon Y] 5 fila(s)
+     - static | Unknown Dungeon | Nv 70-70
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: First HKTW National Championships!
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: So, this is my power...
+  [Rubi Omega] 4 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: First HKTW National Championships!
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: So, this is my power...
+  [Zafiro Alfa] 4 fila(s)
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: First HKTW National Championships!
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: Mewtwo gift
+     - event | Mystery Gift | dato incompleto (sin lugar) | Nv 100-100 | nota: So, this is my power...
+  [Sol] 0 fila(s)
+  [Luna] 0 fila(s)
+  [Ultrasol] 1 fila(s)
+     - static | Ultra Space Wilds | Nv 60-60
+  [Ultraluna] 1 fila(s)
+     - static | Ultra Space Wilds | Nv 60-60
+
+== Entrada 722 ==
+  [Pokemon X] 0 fila(s)
+  [Pokemon Y] 0 fila(s)
+  [Rubi Omega] 0 fila(s)
+  [Zafiro Alfa] 0 fila(s)
+  [Sol] 1 fila(s)
+     - gift | Starter | Iki Town | Nv 5-5
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Luna] 1 fila(s)
+     - gift | Starter | Iki Town | Nv 5-5
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Ultrasol] 1 fila(s)
+     - gift | Starter | Route 1 | Nv 5-5
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)
+  [Ultraluna] 1 fila(s)
+     - gift | Starter | Route 1 | Nv 5-5
+     - se puede obtener por huevo en este juego (puede requerir un padre transferido)

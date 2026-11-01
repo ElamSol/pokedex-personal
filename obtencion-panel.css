@@ -1,0 +1,40 @@
+/* Panel "Dónde obtenerlo": al abrirse, la tarjeta ocupa toda la fila y empuja a las demás hacia abajo. */
+.pokemon-card.obtain-open{grid-column:1/-1;display:grid;grid-template-columns:170px minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:18px;row-gap:8px;align-items:start;cursor:default;padding:12px}
+.pokemon-card.obtain-open .pokemon-main{grid-column:1;grid-row:1}
+.pokemon-card.obtain-open .obtain-toggle{grid-column:1;grid-row:2;align-self:start}
+.pokemon-card.obtain-open .obtain-panel{grid-column:2;grid-row:1/span 2;max-height:none;overflow:visible;padding:14px 16px;font-size:14px;line-height:1.5;background:#fff;border-color:#cfdbe2;color:#172c3d}
+@media(max-width:700px){
+  .pokemon-card.obtain-open{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}
+  .pokemon-card.obtain-open .pokemon-main,.pokemon-card.obtain-open .obtain-toggle,.pokemon-card.obtain-open .obtain-panel{grid-column:1;grid-row:auto}
+  .pokemon-card.obtain-open .pokemon-main{max-width:220px;margin:0 auto}
+}
+.obtain-panel .obtain-heading{display:block;font-size:15px;font-weight:850;color:#172c3d;margin:2px 0 8px}
+.obtain-panel .obtain-heading:not(:first-child){margin-top:16px}
+.obtain-games{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.obtain-panel .obtain-game{margin:0;padding:0;border:1px solid #d3dfe6;border-radius:11px;overflow:hidden;background:#fff;box-shadow:0 2px 6px #142d4510}
+.obtain-panel .obtain-game h4{display:flex;align-items:center;gap:9px;margin:0;padding:9px 12px;font-size:15px;font-weight:850;color:#fff;letter-spacing:.01em}
+.game-icon{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 4px;border-radius:13px;background:#ffffff30;font-size:14px;font-weight:900;line-height:1}
+.obtain-row{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:10px 12px;border-top:1px solid #e8eef2}
+.obtain-row:first-of-type{border-top:0}
+.obtain-type{display:inline-block;font-size:11px;font-weight:850;letter-spacing:.04em;text-transform:uppercase;background:#e3f0f8;color:#134563;border-radius:20px;padding:2px 9px}
+.obtain-type.is-event{background:#fff0c7;color:#6a4700}
+.obtain-main{font-size:14px;font-weight:750;color:#172c3d;line-height:1.35}
+.obtain-detail{font-size:13px;color:#3f5565;line-height:1.45}
+.obtain-warning{font-size:12px;color:#7a4a00;line-height:1.4}
+.obtain-panel .obtain-pending{font-size:13px;color:#4b6070;font-style:normal;margin:4px 0}
+.obtain-source{margin-top:14px;padding:11px 14px;background:#fff8df;border-left:4px solid #edbd36;border-radius:8px;font-size:12.5px;line-height:1.5;color:#5b4a14}
+.obtain-source strong{display:block;font-size:13px;margin-bottom:3px;color:#46370a}
+.obtain-source p{margin:0;color:#5b4a14}
+/* Colores por juego: cada juego se reconoce por su color y su símbolo. */
+.game-x h4{background:#1f6fb2}
+.game-y h4{background:#c0392b}
+.game-omega-ruby h4{background:#a3162e}
+.game-alpha-sapphire h4{background:#1b4a8a}
+.game-sun h4{background:#c96a00}
+.game-moon h4{background:#5b4b9a}
+.game-ultra-sun h4{background:linear-gradient(100deg,#c96a00,#9c2f0a)}
+.game-ultra-moon h4{background:linear-gradient(100deg,#5b4b9a,#1f2a6b)}
+/* Etiquetas de cada fila: tipo + origen */
+.obtain-tags{display:flex;flex-wrap:wrap;gap:6px}
+.obtain-origin{display:inline-block;font-size:11px;font-weight:800;border-radius:20px;padding:2px 9px;background:#eceff3;color:#4a5b68}
+.obtain-origin.is-manual{background:#dcf3e8;color:#0e5f43}

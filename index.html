@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17324d">
+  <meta name="description" content="Pokédex personal para llevar el control de 825 entradas de las generaciones I a VII.">
+  <title>Pokédex personal · Colección</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="obtencion-panel.css">
+  <link rel="stylesheet" href="conseguidos.css">
+  <link rel="stylesheet" href="reproductor.css">
+  <script src="catalog.js" defer></script>
+  <script src="obtencion.js" defer></script>
+  <script src="obtencion_importada.js" defer></script>
+  <script src="obtencion-online.js" defer></script>
+  <script src="playlist.js" defer></script>
+  <script src="reproductor.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" id="brandHome" aria-label="Volver al inicio">
+      <span class="brand-ball" aria-hidden="true"><i></i></span>
+      <span><strong>POKÉDEX</strong><small>MI COLECCIÓN</small></span>
+    </a>
+    <nav class="top-actions" aria-label="Acciones principales">
+      <button class="button button-ghost" id="helpBtn" type="button">? Ayuda</button>
+      <button class="button button-ghost" id="backupBtn" type="button">↗ Respaldo</button>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section id="homeView" class="view">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">TU AVENTURA · TU COLECCIÓN</p>
+          <h1>Completa tu <span>Pokédex</span></h1>
+          <p class="hero-copy">Elige una región, encuentra tus Pokémon y registra los que ya conseguiste.</p>
+        </div>
+        <div class="hero-orb" aria-hidden="true"><span></span></div>
+      </div>
+
+      <section class="overview panel" aria-labelledby="overviewTitle">
+        <div class="section-heading"><div><p class="eyebrow">PROGRESO GENERAL</p><h2 id="overviewTitle">Tu colección</h2></div><span id="overallPercent" class="percent-pill">0%</span></div>
+        <div class="progress-track"><span id="overallBar"></span></div>
+        <div class="stats-row">
+          <div><strong id="caughtTotal">0</strong><span>Conseguidos</span></div>
+          <div><strong id="pendingTotal">825</strong><span>Pendientes</span></div>
+          <div><strong>825</strong><span>Entradas</span></div>
+        </div>
+        <div class="backup-reminder" id="backupReminder">Último cambio: todavía no hay cambios · Último respaldo: aún no has exportado.</div>
+      </section>
+
+      <section class="bank-clock panel" aria-labelledby="bankClockTitle">
+        <div><p class="eyebrow">RECORDATORIO IMPORTANTE</p><h2 id="bankClockTitle">Cierre de Pokémon Bank</h2><p>Transfiere tus Pokémon a Pokémon HOME antes del cierre. Para transferir desde Bank se requiere Pokémon HOME Premium.</p><a href="https://support.pokemon.com/hc/es/articles/52629477077012-Banco-de-Pok%C3%A9mon-y-Pok%C3%A9mon-HOME" target="_blank" rel="noopener">Información oficial</a></div>
+        <div class="bank-countdown" id="bankCountdown" aria-live="polite">Calculando…</div>
+      </section>
+
+      <div class="section-heading generations-heading"><div><p class="eyebrow">SELECCIONA TU DESTINO</p><h2>Regiones</h2></div><span class="muted">7 generaciones</span></div>
+      <div id="generationGrid" class="generation-grid" aria-live="polite"><div class="loading-card">Preparando tu Pokédex…</div></div>
+
+      <section class="recent-panel panel" aria-labelledby="recentCaughtTitle">
+        <div class="section-heading"><div><p class="eyebrow">TUS CAPTURAS</p><h2 id="recentCaughtTitle">Ya conseguidos</h2></div><span id="recentCaughtCount" class="percent-pill">0</span></div>
+        <p id="recentCaughtNote" class="recent-note">Todavía no has marcado Pokémon como conseguidos.</p>
+        <button class="button button-soft hidden" id="recentToggle" type="button">Ver todos y administrar</button>
+        <div id="recentCaughtGrid" class="pokemon-grid compact-grid" aria-live="polite"><p class="empty-note">Aquí aparecerán tus capturas recientes.</p></div>
+      </section>
+
+      <section class="search-panel panel" aria-labelledby="searchTitle">
+        <div class="section-heading"><div><p class="eyebrow">BÚSQUEDA NACIONAL</p><h2 id="searchTitle">Encuentra un Pokémon</h2></div></div>
+        <label class="search-field"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Nombre o número nacional…" autocomplete="off"><button id="clearSearch" type="button" aria-label="Limpiar búsqueda">×</button></label>
+        <div class="filter-row"><label for="homeFilter">Mostrar</label><select id="homeFilter"><option value="todos">Todos</option><option value="conseguidos">Conseguidos</option><option value="pendientes">Pendientes</option></select></div>
+        <div id="homeSearchResults" class="pokemon-grid compact-grid" aria-live="polite"><p class="empty-note">Escribe un nombre o número para buscar en las 825 entradas.</p></div>
+      </section>
+    </section>
+
+    <section id="generationView" class="view hidden">
+      <div class="generation-top">
+        <button class="button button-back" id="backHome" type="button">← Regiones</button>
+        <div class="generation-title"><p class="eyebrow" id="generationEyebrow">GENERACIÓN I</p><h1 id="generationName">Kanto</h1><p id="generationSubtitle" class="hero-copy">151 entradas</p></div>
+        <div class="generation-progress"><strong id="generationCount">0/151</strong><span id="generationPercent">0%</span></div>
+      </div>
+      <div class="generation-tools panel">
+        <label class="search-field small-search"><span aria-hidden="true">⌕</span><input id="generationSearch" type="search" placeholder="Buscar en esta generación…" autocomplete="off"><button id="clearGenerationSearch" type="button" aria-label="Limpiar búsqueda">×</button></label>
+        <div class="tools-bottom"><div class="filter-row"><label for="generationFilter">Estado</label><select id="generationFilter"><option value="todos">Todos</option><option value="conseguidos">Conseguidos</option><option value="pendientes">Pendientes</option></select></div>
+          <div class="bulk-actions"><button class="button button-soft" id="undoBtn" type="button" disabled>↶ Deshacer</button><button class="button button-soft" id="bulkBtn" type="button">✓ Marcar generación</button></div></div>
+      </div>
+      <div id="generationResultsMeta" class="results-meta" aria-live="polite"></div>
+      <div id="pokemonGrid" class="pokemon-grid" aria-live="polite"><div class="loading-card">Cargando generación…</div></div>
+    </section>
+
+    <section id="caughtView" class="view hidden">
+      <div class="generation-top">
+        <button class="button button-back" id="caughtBack" type="button">← Inicio</button>
+        <div class="generation-title"><p class="eyebrow">TUS CAPTURAS</p><h1>Ya conseguidos</h1><p id="caughtSubtitle" class="hero-copy">0 Pokémon conseguidos</p></div>
+      </div>
+      <div class="generation-tools panel caught-tools">
+        <label class="search-field small-search"><span aria-hidden="true">⌕</span><input id="caughtSearch" type="search" placeholder="Buscar entre tus conseguidos…" autocomplete="off"></label>
+        <div class="tools-bottom">
+          <div class="filter-row"><label for="caughtGen">Generación</label><select id="caughtGen"><option value="todas">Todas</option><option value="1">I · Kanto</option><option value="2">II · Johto</option><option value="3">III · Hoenn</option><option value="4">IV · Sinnoh</option><option value="5">V · Teselia</option><option value="6">VI · Kalos</option><option value="7">VII · Alola</option></select></div>
+          <div class="filter-row"><label for="caughtSort">Orden</label><select id="caughtSort"><option value="reciente">Más recientes primero</option><option value="numero">Número nacional</option></select></div>
+        </div>
+        <p class="caught-help">Marca la casilla de cada Pokémon que quieras quitar de «conseguidos» y pulsa <strong>Desmarcar seleccionados</strong>. Tocar una tarjeta aquí solo la selecciona; no cambia nada hasta que confirmes.</p>
+        <div class="caught-actions">
+          <button class="button button-soft" id="caughtSelectAll" type="button">Seleccionar todos los de esta lista</button>
+          <button class="button button-soft" id="caughtClearSel" type="button" disabled>Quitar selección</button>
+          <button class="button button-danger" id="caughtUnmark" type="button" disabled>Desmarcar seleccionados (0)</button>
+          <button class="button button-soft" id="caughtUndo" type="button" disabled>↶ Deshacer</button>
+          <button class="button button-danger" id="caughtUnmarkAll" type="button">Desmarcar todos los conseguidos</button>
+        </div>
+      </div>
+      <div id="caughtMeta" class="results-meta" aria-live="polite"></div>
+      <div id="caughtGrid" class="caught-grid" aria-live="polite"></div>
+      <div class="load-more-row"><button class="button button-soft hidden" id="caughtMore" type="button">Cargar más</button></div>
+    </section>
+
+    <section id="helpView" class="view hidden">
+      <button class="button button-back" id="backFromHelp" type="button">← Volver</button>
+      <div class="help-card panel">
+        <p class="eyebrow">GUÍA RÁPIDA</p><h1>Cómo usar tu Pokédex</h1>
+        <h3>1. Marca tus Pokémon</h3><p>Toca o haz clic en una tarjeta para alternar entre <strong>Conseguido</strong> y <strong>Pendiente</strong>. El progreso se guarda automáticamente en este navegador.</p>
+        <h3>2. Busca y filtra</h3><p>Busca por nombre o número nacional. La búsqueda ignora mayúsculas y acentos. Puedes combinarla con el filtro de estado.</p>
+        <h3>3. Corrige un toque</h3><p>Dentro de una generación, usa <strong>Deshacer</strong> para revertir el último cambio. Las acciones masivas y el reinicio solicitan confirmación.</p>
+        <h3>4. Exporta tu respaldo</h3><p>En la pantalla principal pulsa <strong>Respaldo</strong> y luego Exportar. Se descargará un archivo JSON con tu progreso. Guárdalo en un lugar seguro.</p>
+        <h3>5. Importa o traslada tu colección</h3><p>En el otro dispositivo abre la Pokédex, pulsa Respaldo e Importar y selecciona el archivo. Usa <strong>Combinar</strong> para conservar las marcas de ambos dispositivos o <strong>Reemplazar</strong> para usar exactamente el archivo.</p>
+        <h3>6. Ver y quitar conseguidos</h3><p>En el inicio, <strong>Ya conseguidos</strong> muestra los 12 más recientes. Pulsa <strong>Ver todos y administrar</strong> para abrir la lista completa: busca, filtra por generación, marca varios con la casilla y usa <strong>Desmarcar seleccionados</strong>. También puedes desmarcar todos de una vez; ambas acciones piden confirmación y se pueden deshacer.</p>
+        <h3>7. Dónde obtenerlo</h3><p>Cada tarjeta tiene el botón <strong>Dónde obtenerlo</strong>. Al abrirlo, la tarjeta ocupa toda la fila y muestra un bloque por juego. Las filas «Revisado a mano» se comprobaron una por una; las «importadas» vienen de una fuente externa guardada en tu equipo y están por verificar.</p>
+        <h3>8. Música</h3><p>La barra inferior reproduce la música de la carpeta <strong>musica</strong>. Pulsa ▶ para empezar; usa ⏮ y ⏭ para cambiar de pista, −10 s y +10 s para moverte, ⇄ para orden aleatorio y ↻ para repetir. El botón <strong>♪ Lista</strong> permite buscar y elegir pistas. Si agregas música nueva, ejecuta ACTUALIZAR_MUSICA.cmd.</p>
+        <div class="notice"><strong>Importante:</strong> cada navegador guarda su propio progreso. Borrar los datos del navegador puede eliminarlo. Exporta respaldos periódicos. Para trasladar la colección, puedes mover el archivo mediante Google Drive, OneDrive o Dropbox.</div>
+        <div class="notice copyright"><strong>Derechos de imagen:</strong> proyecto personal y sin fines de lucro. Los nombres, personajes, imágenes y música Pokémon pertenecen a Nintendo, Game Freak y The Pokémon Company. Los sprites se obtienen de PokéAPI.</div>
+        <button class="button button-primary" id="helpDone" type="button">Entendido</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="backupDialog" class="dialog">
+    <form method="dialog" class="dialog-head"><div><p class="eyebrow">TUS DATOS</p><h2>Respaldo de colección</h2></div><button class="icon-button" value="close" aria-label="Cerrar">×</button></form>
+    <div class="dialog-body"><p>Tu progreso permanece en este dispositivo. Exporta un archivo para conservarlo o trasladarlo.</p>
+      <div class="backup-actions"><button class="button button-primary" id="exportBtn" type="button">↓ Exportar JSON</button><button class="button button-soft" id="importBtn" type="button">↑ Importar JSON</button><input id="importFile" type="file" accept=".json,application/json" hidden></div>
+      <div class="backup-actions reset-actions"><button class="button button-danger" id="resetBtn" type="button">Borrar todo el progreso</button></div>
+      <div id="importPanel" class="import-panel hidden"><p id="importSummary"></p><p class="muted">Elige cómo aplicar el respaldo:</p><div class="backup-actions"><button class="button button-danger" id="replaceBtn" type="button">Reemplazar</button><button class="button button-primary" id="mergeBtn" type="button">Combinar</button></div></div>
+      <p id="backupMessage" class="message" role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer><span>Pokédex personal · Catálogo de generaciones I–VII</span><span>El progreso se guarda solo en este dispositivo.</span></footer>
+</body>
+</html>
